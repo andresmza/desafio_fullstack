@@ -1,0 +1,68 @@
+.color-sample {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+.fc-day-grid-container .fc-day-top,
+.fc-day-grid-container .fc-day {
+    border: none;
+    border-radius: 100%;
+}
+
+.fc-day-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+    float: none;
+    display: flex;
+    align-items: center;
+    margin-top: 30%;
+    justify-content: center;
+}
+
+.fc-unthemed td.fc-today {
+    background: transparent;
+    border: none;
+}
+
+.fc-unthemed {
+    background-color: #0000000f !important;
+}
+
+.route {
+    border-radius: 100%;
+    background: #ffffff !important;
+}
+.disabled-day {
+    background: #fce5cd !important;
+    /* border-radius: 100% !important; */
+}
+.out-of-frequency-day {
+    background: #cc0000 !important;
+}
+
+.reservation-day {
+    background: #38761d !important;
+}
+
+.service-day {
+    background: #ffffff !important;
+}
+
+.full-route-capacity-day {
+    background: #d9d9d9 !important;
+}
+
+.today {
+    border-radius: 100% !important;
+    background-color: #fce5cd !important;
+    color: red !important;
+    border: black !important;
+}
