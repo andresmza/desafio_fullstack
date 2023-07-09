@@ -166,8 +166,8 @@ const refreshCalendar = () => {
 };
 
 const renderCalendar = () => {
-    initializeCalendar();
     // Realizar renderizado adicional del calendario según los datos de la ruta
+    initializeCalendar();
 };
 
 const renderDay = (date, cell) => {
@@ -181,7 +181,6 @@ const renderDay = (date, cell) => {
 
         if (moment(day).isBetween(date_init, date_end, "day", [])) {
             cell.addClass("route");
-            console.log(day)
 
             //Days disabled
             const daysDisabled = routeData.days_disabled;
