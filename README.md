@@ -3,20 +3,6 @@
 
 ## DESAFÍO FULL STACK
 
-Link de la consigna utilizada para realizar el desafío:
-
-- <a href="https://amobalearning.fra1.cdn.digitaloceanspaces.com/Resources/Prueba%20FullStack%20new.pdf">Consigna</a>
-
-
-
-##  REQUISITOS PREVIOS
- 
- - <a href="https://www.mysql.com/">MySQL</a>
- - <a href="https://www.php.net/downloads/">PHP 8.1</a>
- - <a href="https://getcomposer.org/">Composer</a>
- - <a href="https://www.apache.org/">APACHE</a>
-
-
 ## DEMO
 
  - Sistema en producción en un contenedor:
@@ -27,8 +13,16 @@ Link de la consigna utilizada para realizar el desafío:
 
  - Al utilizar en el filtro de fecha el día 11/01/2020 se puede obsevar un caso de ejemplo que contiene todos los estados posibles de una ruta.
 
-
 ## Instalación en entorno local
+
+##  REQUISITOS PREVIOS
+ 
+ - <a href="https://www.mysql.com/">MySQL</a>
+ - <a href="https://www.php.net/downloads/">PHP 8.1</a>
+ - <a href="https://getcomposer.org/">Composer</a>
+ - <a href="https://www.apache.org/">APACHE</a>
+
+##  Pasos a seguir:
 
  - Clonar el repositorio, preferentemente en  ```/var/www/```:
 	
