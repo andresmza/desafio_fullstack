@@ -214,7 +214,6 @@ const renderDay = (date, cell) => {
             //Full route capacity days
             const fullRouteCpacityDays = routeData.full_route_capacity_days;
             if (fullRouteCpacityDays.includes(day)) {
-                // console.log(day, "disabled");
                 cell.addClass("full-route-capacity-day");
             }
 

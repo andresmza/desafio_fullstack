@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CalendarDaysDisabled;
+use App\Models\Reservation;
 use App\Models\Route;
+use App\Models\RoutesData;
+use App\Models\Service;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
@@ -63,19 +67,20 @@ class RouteController extends Controller
         }
 
         // Obtener el rango de la ruta
-        $range = $route->getRange();
+        $range = RoutesData::getRange($route->id);
 
         // Obtener los días deshabilitados para la ruta
-        $daysDisabled = $route->getDaysDisabled();
+        $calendar = RoutesData::getCalendar($route->id);
+        $daysDisabled = CalendarDaysDisabled::getDaysDisabled($calendar->calendar_id);
 
         // Obtener los días fuera de frecuencia para la ruta
-        $frequencyDays = $route->getFrequencyDays();
+        $frequencyDays = RoutesData::getFrequencyDays($route->id);
 
         // Obtener los días de reserva para la ruta
-        $reservationDays = $route->getReservationDays();
+        $reservationDays = Reservation::getReservationDays($route->id);
 
         // Obtener los días de servicio para la ruta
-        $serviceDays = $route->getServiceDays();
+        $serviceDays = Service::getServiceDays($route->external_id);
 
         // Obtener los días con capacidad completa de la ruta
         $fullRouteCapacityDays = $route->getFullRouteCapacityDays($route->pax, $serviceDays);
